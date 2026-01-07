@@ -1,0 +1,23 @@
+# Simple Calculator
+
+num1 = float(input("Give 1st Number: "))
+num2 = float(input("Give 2nd Number: "))
+operator = input("Give Operator (+, -, *, /): ")
+
+if operator == "+":
+    print(f"Addition of 2 numbers is {num1 + num2}")
+
+elif operator == "-":
+    print(f"Subtraction of 2 numbers is {num1 - num2}")
+
+elif operator == "*":
+    print(f"Multiplication of 2 numbers is {num1 * num2}")
+
+elif operator == "/":
+    if num2 != 0:
+        print(f"Division of 2 numbers is {num1 / num2}")
+    else:
+        print("Error: Cannot divide by zero.")
+
+else:
+    print("Invalid operator")
